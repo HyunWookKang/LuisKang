@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Who am I?</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- <link rel="shortcut icon" href="../favicon.ico"> -->
+	<link type="text/css" rel="stylesheet" href='{{ url_for('static', filename = css/stylesheet.css) }}'/>
+	<link rel="stylesheet" type="text/css" href='{{ url_for('static', filename = css/demo2.css) }}'/>
+	<link rel="stylesheet" type="text/css" href='{{ url_for('static', filename = css/component.css) }}'/>
+	<link rel="stylesheet" type="text/css" href='{{ url_for('static', filename = css/normalize.css) }}' />
+	<link rel="stylesheet" type="text/css" href='{{ url_for('static', filename = css/style2.css) }}'/>
+	<link rel="stylesheet" type="text/css" href='{{ url_for('static', filename = css/demo.css) }}'/>
+	<link rel="stylesheet" type="text/css" href='{{ url_for('static', filename = css/style.css) }}' />
+	<script type='text/javascript' src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
+	<script type='text/javascript' src='{{ url_for('static', filename = js/jquery.arctext.js) }}'></script>
+	<script type='text/javascript' src='{{ url_for('static', filename = js/snap.svg-min.js) }}'></script>
+	<script type='text/javascript' src='{{ url_for('static', filename = js/jquery-ui.min.js) }}'> </script>
+	<script type='text/javascript' src='{{ url_for('static', filename = js/script.js) }}'> </script>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat|Sail|Concert+One' rel='stylesheet' type='text/css' />
+</head>
+<body>
+	<div class="container">
+		<header class="codrops-header">
+				<div id='example1' class="example">
+					<a href='#'>
+					<h1 id='title1'>For Humanism Society</h1></a>
+				</div>
+		</header>
+		<section id="grid" class="grid clearfix">
+			<<a data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+					<figure>
+						<img  class='Menupicture' src="./static/res/img/luis_kang.png" />
+						<svg img src='./static/res/img/snow.png' viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+						<figcaption>
+							<h2>Profile</h2>
+							<p>기본 정보</p>
+							<button id='Profilebutton'>View</button>
+						</figcaption>
+					</figure>
+			</a>
+			<a data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+				<figure>
+					<img class='Menupicture' src="./static/res/img/history.png" />
+					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+					<figcaption>
+						<h2>History</h2>
+						<p>성장 과정</p>
+						<button>View</button>
+					</figcaption>
+				</figure>
+			</a>
+			<a data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+				<figure>
+					<img class='Menupicture' src="./static/res/img/footballmenu.png" />
+					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+					<figcaption>
+						<h2>Football</h2>
+						<p>취미 1</p>
+						<button id="Footballbutton">View</button>
+					</figcaption>
+				</figure>
+			</a>
+			<a data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+				<figure>
+					<img class='Menupicture' src="./static/res/img/book.png" />
+					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+					<figcaption>
+						<h2>Books</h2>
+						<p>취미 2</p>
+						<button id='Bookbutton'>View</button>
+					</figcaption>
+				</figure>
+			</a>
+			<a data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+				<figure>
+					<img class='Menupicture' src="./static/res/img/value.png" />
+					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+					<figcaption>
+						<h2>Values</h2>
+						<p>나의 가치관</p>
+						<button>View</button>
+					</figcaption>
+				</figure>
+			</a>
+			<a data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+				<figure>
+					<img class='Menupicture' src="./static/res/img/future.png" />
+					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+					<figcaption>
+						<h2>Future</h2>
+						<p>향후 계획</p>
+						<button>View</button>
+					</figcaption>
+				</figure>
+			</a>
+			<a data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
+				<figure>
+					<img class='Menupicture' src="./static/res/img/idea.png" />
+					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
+					<figcaption>
+						<h2>Ideas</h2>
+						<p>미래를 바꾸는 생각</p>
+						<button id='Ideabutton'>View</button>
+					</figcaption>
+				</figure>
+			</a>
+		</section>
+		<section class="related">
+			<p>Contact me</p>
+			<div><a href="https://www.facebook.com/profile.php?id=100002475912261"><h4>페이스북</h4></a></div>
+			<div><h4>010-2089-5208</h4></div>
+		</section>
+	</div><!-- /container -->
+	<script>
+	(function() {
+
+		function init() {
+			var speed = 250,
+			easing = mina.easeinout;
+
+			[].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+				var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+				pathConfig = {
+					from : path.attr( 'd' ),
+					to : el.getAttribute( 'data-path-hover' )
+				};
+
+				el.addEventListener( 'mouseenter', function() {
+					path.animate( { 'path' : pathConfig.to }, speed, easing );
+				} );
+
+				el.addEventListener( 'mouseleave', function() {
+					path.animate( { 'path' : pathConfig.from }, speed, easing );
+				} );
+			} );
+		}
+
+		init();
+
+	})();
+	</script>
+	<img class='Profile' id="Profilepicture" src='./static/res/img/luis_kang.png'/>
+	<ul class="Profile" id='Profilecontents'>
+		<li class='Profiling'> Name : 강현욱 (Luis Kang)</li>
+		<li class='Profiling'> Birth / Age : 1991. 12. 05. / 24 (Korea) </li>
+		<li class='Profiling'> Address : CheongDamDong, GangNamGu, Seoul, Republic of Korea </li>
+		<li class='Profiling'> School / Major : Seoul National University / Social Studies Education </li>
+		<li class='Profiling'> E-mail / Facebook : kangharace@naver.com / revolutionist_k@hanmail.net </li>
+		<li class='Profiling'> Military Service : The army 75th Infantry Division / Sergeant / Signal & Suppling administrative clerk </li>
+		<li class='Profiling'> Motto : Enjoy Life! & Be a foundation for Humanism Society </li>
+	</ul>
+	<div id='Hobbycontents'>
+		<h4> Football </h4>
+			<ul id='Footballcontents'>
+				<li><b><em> 초등학교 2학년 : 역사의 시작 </em></b></li>
+				<li> 초등학교 4학년 : 드디어 발등으로 공을 차게 됨 </li>
+				<li> 초등학교 5학년 : 현재 프로선수인 친구와 '좌천수 우태욱'을 꿈꾸며 축구부 입단 </li>
+				<li><b><em> 초등학교 6학년 : 재능의 한계를 느끼고 프로 무대에서 은퇴 </em></b></li>
+				<li> 중학교 2학년 : 학교 아마추어 축구팀 '프랑스' 창단 등번호 7번 및 주장 역임 </li>
+				<li><b><em> 중학교 3학년 : 반대항 축구대회 계남컵에서 팀의 자책골로 1라운드 탈락.<br> 충격으로 외고 시험 낙방 </em></b></li>
+				<li> 고등학교 1학년 : 축구 동아리 MOK 가입. 학교 대항전 참여 </li>
+				<li><b><em> 고등학교 2학년 : 부천시장배 축구대회 출전. 4강 </em></b></li>
+				<li> 고등학교 3학년 ~ 재수 : 침체기 </li>
+				<li> 대학교 1학년 : 경영대 축구 동아리 아르마다, 동네 조기 축구팀 등을 전전하다 입대 </li>
+				<li><b><em> 군 복무 중 : 이등병때부터 활약하며 선임 및 간부의 사랑을 한 몸에 받음. 재기 성공!! </em></b></li>
+				<li> 현재 : 사범대 축구동아리 프리템포 가입 예정 - 계절학기 끝나는 대로 </li>
+			</ul>
+			<img src='./static/res/img/football.png'/><br>
+			<img src='./static/res/img/football2.png'/>
+	</div>
+	<div id='Bookcontents'>
+		<table>
+			<tr>
+				<td>
+					<img src="./static/res/img/bookdosto1.png"/>
+					<br>도스토예프스키 <br> 카라마조프가의 형제들
+				</td>
+				<td>
+					<img src='./static/res/img/bookfitz.png'/>
+					<br>스캇 피츠제럴드 <br> 위대한 개츠비
+				</td>
+				<td>
+					<img src="./static/res/img/bookjorba.png"/>
+					<br>니코스 카잔차키스 <br> 그리스인 조르바
+				</td>
+				<td>
+					<img src='./static/res/img/bookmilan.png'/>
+					<br>밀란 쿤데라 <br> 참을 수 없는 존재의 가벼움
+				</td>
+			</tr>
+			<tr>	
+				<td>
+					<img src='./static/res/img/booksalin.png'/>
+					<br>샐린저 <br> 호밀밭의 파수꾼
+				</td>
+				<td>
+					<img src='./static/res/img/booktols.png'/>
+					<br>톨스토이 <br> 전쟁과 평화
+				</td>
+				<td>
+					<img src='./static/res/img/booktols2.png'/>
+					<br>톨스토이 <br> 안나 카레니나
+				</td>
+				<td>
+					<img src='./static/res/img/bookmonte.png'/>
+					<br>알렉산드르 뒤마 <br> 몬테크리스토 백작
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src='./static/res/img/bookmom.png'/>
+					<br>신경숙 <br> 엄마를 부탁해
+				</td>
+				<td>
+					<img src='./static/res/img/booktaebak.png'/>
+					<br>조정래 <br> 태백산맥
+				</td>
+				<td>
+					<img src='./static/res/img/booktoji.png'/>
+					<br>박경리 <br> 토지
+				</td>
+				<td>
+					<img src='./static/res/img/bookdiplo.png'/>
+					<br>헨리 키신저 <br> 디플로머시
+				</td>
+			</tr>
+		</table>
+	</div>
+	<a id='Idealink' href="idea_open">
+		<p id='Linkaddress'> luis-kang-idea.appspot.com </p></a>
+	</body>
+	</html>
